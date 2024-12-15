@@ -1,15 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const cards = document.querySelectorAll('.card');
+function toggleDropdown() {
+    document.getElementById("dropdown-menu").classList.toggle("show");
+}
 
-    cards.forEach(card => {
-        card.addEventListener('click', function() {
-            // Jika card sudah memiliki kelas 'active', hapus kelas tersebut
-            if (this.classList.contains('active')) {
-                this.classList.remove('active');
-            } else {
-                // Jika tidak, tambahkan kelas 'active'
-                this.classList.add('active');
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
             }
-        });
-    });
-});
+        }
+    }
+}
