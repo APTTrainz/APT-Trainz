@@ -103,3 +103,9 @@ p {
 .contact-button:hover {
     background-color: #22c15b;
 }
+/* responsive.css */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}

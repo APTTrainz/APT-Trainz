@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Stasiun</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(254, 254, 254);
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+        }
+
+        /* Content Section */
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            background-color: #1a1a1a;
+            padding: 2rem;
+            border-radius: 10px;
+            color: #fff;
+            gap: 1.5rem;
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-content h2 {
+            font-size: 2rem;
+            color: #707070;
+        }
+
+        .card-content h3 {
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+        }
+
+        .card-content p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Styling untuk tombol download */
+        .card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .card a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Alternate Card Layout */
+        .card.reverse {
+            flex-direction: row-reverse;
+        }
+
+        /* Membuat teks pada konten nomor 2 rata kiri */
+        .card:nth-child(2) .card-content-1 {
+            text-align: right;
+        }
+
+        .card-content-1 h2 {
+            font-size: 2rem;
+            color: #707070;
+            text-align: end;
+        }
+
+        .card-content-1 h3 {
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+            text-align: end;
+        }
+
+        .card-content-1 p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #111;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        .card-reverse a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .card-reverse a:hover {
+            background-color: #0056b3;
+        }
+        .card-content-1 {
+            /* background-color: #0056b3; */
+            /* padding: 10px; */
+            text-align: center;
+            /* text-decoration: none; */
+            /* color: white; */
+        }
+        .card-content-1 a{
+            background-color: #007bff;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border-radius: 10px;
+        }
+        .card-content-1 a:hover{
+            background-color: #0056b3;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border-radius: 10px;
+        }
+        @media screen and (max-width: 600px) {
+        body {
+            background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <!-- <img src="/APT-Trainz/images/APT-Trainz 1.jpg" alt="Background"> -->
+        <div class="hero-text">
+            <h1>Download Trainz Simulator Android & PC</h1>
+            <p>Download Gamenya</p>
+            <p>scroll down ↓</p>
+        </div>
+    </header>
+    <!-- Content Sections -->
+    <section class="content" id="content">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Logo TSA.jpg" alt="Stasiun">
+            <div class="card-content">
+                <!-- <h2>39</h2> -->
+                <h3>Trainz Simulator Android</h3>
+                <p>Bagi yang belum download game nya silahkan untuk mengunduh gamenya di link download di bawah ini, support untuk semua android jika mengalami masalah saat install silahkan untuk ke halaman tutorial di bawah ini ya</p>
+                <a href="https://drive.google.com/file/d/1dOCQ1pwywKlpHUmLZnDXfXt5PNYi6bJt/view?usp=drive_link" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Trainz simulator 2009.png" alt="Stasiun">
+            <div class="card-content">
+                <!-- <h2>39</h2> -->
+                <h3>Trainz Simulator 2009</h3>
+                <p>Bagi yang belum download game nya silahkan untuk mengunduh gamenya di link download di bawah ini, Silahkan untk memilih serial number di bawah ini.</p>
+                <a href="https://drive.google.com/file/d/1dOCQ1pwywKlpHUmLZnDXfXt5PNYi6bJt/view?usp=drive_link" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card-content-1">
+            <a href="/APT-Trainz/SerialNumber.html">Kumpulan Serial Number</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 APT-Trainz. | Terms & Privacy</p>
+    </footer>
+</body>
+</html>

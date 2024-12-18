@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Stasiun</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(254, 254, 254);
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+        }
+
+        /* Content Section */
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            background-color: #1a1a1a;
+            padding: 2rem;
+            border-radius: 10px;
+            color: #fff;
+            gap: 1.5rem;
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-content h2 {
+            font-size: 2rem;
+            color: #707070;
+        }
+
+        .card-content h3 {
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+        }
+
+        .card-content p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Styling untuk tombol download */
+        .card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .card a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Alternate Card Layout */
+        .card.reverse {
+            flex-direction: row-reverse;
+        }
+
+        /* Membuat teks pada konten nomor 2 rata kiri */
+        .card:nth-child(2) .card-content-1 {
+            text-align: right;
+        }
+
+        .card-content-1 h2 {
+            font-size: 2rem;
+            color: #707070;
+            text-align: end;
+        }
+
+        .card-content-1 h3 {
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+            text-align: end;
+        }
+
+        .card-content-1 p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #111;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        .card-reverse a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .card-reverse a:hover {
+            background-color: #0056b3;
+        }
+        .search-container {
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        .search-container input {
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #0056b3;
+        }
+        @media screen and (max-width: 600px) {
+        body {
+            background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <img src="/APT-Trainz/images/APT-Trainz 1.jpg" alt="Background">
+        <div class="hero-text">
+            <h1>APT-Trainz Content</h1>
+            <p>Download Stasiun</p>
+            <p>scroll down ↓</p>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Cari konten di halaman ini...">
+        <button id="searchButton">Search</button>
+    </div>
+
+    <!-- Content Sections -->
+    <section class="content" id="content">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Cimekar Update.jpg" alt="Stasiun">
+            <div class="card-content">
+                <h2>39</h2>
+                <h3>Stasiun Cimekar Baru</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun cimekar yang terbaru, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1d3fuB1q7jjJH5eNAsYpJl9U8ORg_v6ii/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun CIkawung.jpg" alt="Stasiun">
+            <div class="card-content">
+                <h2>38</h2>
+                <h3>Stasiun Cikawung</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun cimekar yang terbaru, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1d7JHraIhdtZ3nUR0koyeMwVQaJaCzq8W/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Cilacap.jpg" alt="Stasiun">
+            <div class="card-content">
+                <h2>37</h2>
+                <h3>Stasiun Cilacap</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Cilacap, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <p><mark>Password = cara masukin addons di ts pc gimana? pm kalo tau</mark></p>
+                <a href="https://drive.google.com/file/d/1_ruPDJmc45c-CNNpD9gCZdcoqLATgkLr/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Tegal.jpg" alt="Stasiun">
+            <div class="card-content">
+                <h2>36</h2>
+                <h3>Stasiun Tegal</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Tegal, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1UHyDFHsGNrLEauoPP8N9xiiSRBhPtzyq/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Kiaracondong Fix Peron.jpg" alt="Stasiun">
+            <div class="card-content">
+                <h2>35</h2>
+                <h3>Stasiun Kiaracondong Fix Peron</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Kiaracondong yang sudah di fix peronnya, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1HvDaRu3MoQtepX_SQ_Yt7DjQBzYx04sK/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Haurpugur Update.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>34</h2>
+                <h3>Stasiun Haurpugur Update</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Haurpugur Update yang terbaru, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1Ffh07xht_ibz2nNIQe0Kcp1xA2JGofN_/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Banjar.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>33</h2>
+                <h3>Stasiun Banjar</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Banjar, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1pnYod2QCErH3YKoG2Wr8j4MCa8ZgR2sY/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Bojong.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>32</h2>
+                <h3>Stasiun Bojong</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Bojong, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1boMrpThREGmYT-Xcj9mNi5l57OuXfYV3/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Karang Pucung.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>31</h2>
+                <h3>Stasiun Karang Pucung</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Karang Pucung, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1j8hy4t9hvgvTCfGT4IoIUllcbOGNOiGZ/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Ciamis.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>30</h2>
+                <h3>Stasiun Ciamis</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Ciamis, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1xlgQ0rqTFkdzwSe8_dbs3TIfy5MNJAYL/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Manonjaya.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>29</h2>
+                <h3>Stasiun Manonjaya</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Manonjaya, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1sfa-LmTwnSXpkbEmVn4TSJi_9X6wQ6J2/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Indihiang.png" alt="Gear">
+            <div class="card-content">
+                <h2>28</h2>
+                <h3>Stasiun Indihiang</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Indihiang, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1ol-o9ZGQYetaWuQZOxmMXLxenc7rBny_/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Awipari.png" alt="Gear">
+            <div class="card-content">
+                <h2>27</h2>
+                <h3>Stasiun Awipari</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Awipari, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1mkZW1U1ezimAXUBHKSnUPs56rY7VJw-l/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Tasikmalaya.png" alt="Gear">
+            <div class="card-content">
+                <h2>26</h2>
+                <h3>Stasiun Tasikmalaya</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Tasikmalaya, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/10ClxuJBm4sts2pvmVmbLxP3exnTYIOhj/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Ciawi.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>25</h2>
+                <h3>Stasiun Ciawi</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Ciawi, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1TMrz4J9sIJSns7D_o3usRRGJxccKUNsI/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Rajapolah.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>24</h2>
+                <h3>Stasiun Rajapolah</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Rajapolah, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1GUH0sEFsQoEuao4tcOZtxZAAgvMnXqjM/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Cirahayu.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>23</h2>
+                <h3>Stasiun Cirahayu</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Cirahayu, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1g-C-Z2hX8qobd0WGd_ao08VgoledSbdS/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Warung Bandrek.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>22</h2>
+                <h3>Stasiun Warung Bandrek</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Warung Bandrek, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1sJ-LRw0Mb2Dmsehnmwj-51j4X9x9TdvX/view?usp=sharing" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Cipeundeuy.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>21</h2>
+                <h3>Stasiun Cipeundeuy</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Cipeundeuy, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1m6q-W0pTIX6Lzd1vNv54Z8FRUPf1PYA8/view?usp=drive_link" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Bumi Waluya.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>20</h2>
+                <h3>Stasiun Bumi Waluya</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Bumi Waluya, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1Bm-07Mc_yDEiUafZ4_I3BoA0wf7kN_xc/view?usp=drive_link" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Cibatu.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>19</h2>
+                <h3>Stasiun Cibatu</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Cibatu, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <p><mark>Password : kenapa harus gamon sih ah bangke</mark></p>
+                <a href="https://drive.google.com/file/d/18Dkrx4EAajf1P8Wfd78o3qz0VEYyywKP/view?usp=drivesdk" download>Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Lewigoong.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>18</h2>
+                <h3>Stasiun Lewigoong</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Lewigoong, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/17eBYPrtPBlfSzQesaBEQIqxHcOOx3qvj/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Leles.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>17</h2>
+                <h3>Stasiun Leles</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Leles, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/17dQRQD4HL8F9wRg58j07dbQCkON_DMNL/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Karang Sari.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>16</h2>
+                <h3>Stasiun Karangsari</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Karangsari, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/17cu3Hih5yxtMaDPFj28mDy9W8FvVS_oC/view?usp=drivesdk" target="_blank" >Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Cicalengka.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>15</h2>
+                <h3>Stasiun Cicalengka</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Cicalengka, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/179R8Qffn2y2Xl4CSIDVFHz4TZQvLyfmS/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Nagreg.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>14</h2>
+                <h3>Stasiun Nagreg</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Nagreg, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1793jk0rzLM-1tXTLQCbqY5BhOLi3Tg86/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Lebak jero.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>13</h2>
+                <h3>Stasiun Lebak Jero</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Lebak Jero, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/17A3p8RCNm35WPR1qmqYRUvmdHpGMfIZ5/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-stasiun Cimekar.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>12</h2>
+                <h3>Stasiun Cimekar</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Cimekar, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/16Dm07PwzpboznFovaQMeHpGTyPy0a20C/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Haurpugur.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>11</h2>
+                <h3>Stasiun Haurpugur</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Haurpugur, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/16VekvtaaH5QlavtTnb3Ou1qbRW8aYDUE/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Rancaekek.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>10</h2>
+                <h3>Stasiun Rancaekek</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Rancaekek, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/16EPt845eQitkjke47TCZBgxEsRIWvBj9/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Gedebage.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>9</h2>
+                <h3>Stasiun Gedebage</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Gedebage, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/15HTwkYBDWpoVX3gIoO1je8VQvvR2EL6e/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Kiaracondong.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>8</h2>
+                <h3>Stasiun Kiaracondong</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Kiaracondong, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/14kUzCvV1BPMo05MN47Tz8-20qq03z7ka/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Paledang.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>7</h2>
+                <h3>Stasiun Paledang</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Paledang, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/13evkqqsoWgSfvzPnfiFuPLvfz6gccgeA/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Cikudapateuh.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>6</h2>
+                <h3>Stasiun Cikudapateuh</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Cikudapateuh, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Manonjaya.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>5</h2>
+                <h3>Stasiun Manonjaya</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Manonjaya, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1SijN_qwfUoDEftCTrYMXygvrwzjvmtlt/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Fiksi.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>4</h2>
+                <h3>Stasiun Fiksi</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Fiksi, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/1VbDuYmXFSenA6OMIUcPeGqX93WIE-qOd/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Bogor.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>3</h2>
+                <h3>Stasiun Bogor</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Bogor, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/10U23CyH_TOKBzUNqxUxbrM1-rGVwTCxq/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Sukabumi.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>2</h2>
+                <h3>Stasiun Sukabumi</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Sukabumi, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                <a href="https://drive.google.com/file/d/112v2p65heUtWbqNKEWjYzwcC4yrGKPhS/view?usp=drivesdk" target="_blank">Download</a>
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/APT-Trainz/images/APT-Stasiun Bandung.jpg" alt="Gear">
+            <div class="card-content">
+                <h2>1</h2>
+                <h3>Stasiun Bandung</h3>
+                <p>Kali ini kami mau memberikan konten yang berupa stasiun Bandung, Distasiun ini kami ada beberapa bagian yang dibuat fiksi untuk memperindah tampilan, bukan tanpa alasan karena kami minim referensi yang hanya mengandalkan source youtube,Untuk detail selebihnya silahkan untuk mencek sendiri, Mohon maaf bila ada kekurangan dari konten ini, Terimakasih.</p>
+                
+                <a href="https://sociabuzz.com/apt_trainz_donasi" target="_blank">Support Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 APT-Trainz. | Terms & Privacy</p>
+    </footer>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const searchButton = document.getElementById('searchButton');
+        const content = document.getElementById('content');
+
+        searchButton.addEventListener('click', function () {
+            const query = searchInput.value.toLowerCase();
+            const cards = content.querySelectorAll('.card');
+
+            let targetFound = false;
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                if (!targetFound && text.includes(query)) {
+                    targetFound = true;
+                    smoothScrollTo(card.offsetTop, 500); // Scroll to the card's position with a 500ms duration
+                }
+            });
+
+            if (!targetFound) {
+                alert('Konten tidak ditemukan.');
+            }
+        });
+
+        function smoothScrollTo(targetY, duration) {
+            const startY = window.scrollY;
+            const distance = targetY - startY;
+            let startTime = null;
+
+            function animationScroll(currentTime) {
+                if (!startTime) startTime = currentTime;
+                const timeElapsed = currentTime - startTime;
+                const progress = Math.min(timeElapsed / duration, 1);
+                const ease = easeInOutQuad(progress);
+                window.scrollTo(0, startY + distance * ease);
+                if (timeElapsed < duration) requestAnimationFrame(animationScroll);
+            }
+
+            function easeInOutQuad(t) {
+                return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+            }
+
+            requestAnimationFrame(animationScroll);
+        }
+    </script>
+
+
+</body>
+</html>

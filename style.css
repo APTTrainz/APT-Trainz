@@ -199,3 +199,9 @@ body {
     text-align: center;
     font-size: 17px;
 }
+/* responsive.css */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
