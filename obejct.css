@@ -1,6 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    /* background-color: #f0f0f0; */
     background-image: url(/APT-Trainz/images/APT-Trainz\ Background\ Download.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -11,7 +16,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .container {
@@ -20,20 +26,24 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px black;
-    width: 40%;
+    max-width: 600px;
+    width: 100%;
 }
 
 h1 {
     color: #c7c7c7;
+    margin-bottom: 20px;
 }
 
 p {
     color: #adadad;
+    margin-bottom: 20px;
 }
 
 .download-button {
     display: block;
-    width: 200px;
+    width: 80%;
+    /* max-width: 200px; */
     margin: 10px auto;
     padding: 10px 20px;
     background-color: #007BFF;
@@ -46,9 +56,13 @@ p {
 .download-button:hover {
     background-color: #0056b3;
 }
-/* responsive.css */
+
 @media screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
+    .container {
+        padding: 15px;
+    }
+
+    .download-button {
+        padding: 15px;
     }
 }
