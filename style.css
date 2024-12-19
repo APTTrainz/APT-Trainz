@@ -28,7 +28,7 @@ body {
     margin-bottom: 0;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 
 .image {

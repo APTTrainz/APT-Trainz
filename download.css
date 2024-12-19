@@ -17,7 +17,9 @@ body {
     gap: 20px;
     padding: 20px;
 }
-
+.content-manager {
+    background-color: #0056b3;
+}
 .card {
     position: relative;
     width: 300px;
